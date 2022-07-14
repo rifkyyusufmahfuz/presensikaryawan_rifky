@@ -1,0 +1,325 @@
+body {
+    background: #eee;
+    color: #333;
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+#wrapper {
+    background: rgb(240, 175, 175);
+    width: auto;
+}
+
+#wrapper header {
+    background: rgb(102, 5, 70);
+    padding: 10px;
+}
+
+#wrapper header hgroup {
+    float: left;
+    color: #fff;
+}
+
+#wrapper header nav {
+    float: right;
+    margin-top: 40px;
+}
+
+#wrapper header nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper header nav ul li {
+    float: left;
+    list-style: none;
+}
+
+#wrapper header nav ul li a {
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    background: rgb(102, 5, 70);
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+section {
+    padding: auto;
+}
+
+section h1 {
+    text-align: center;
+}
+
+section div {
+    margin-left: 350px;
+    padding-top: 20px;
+    height: 200px;
+    width: 40%;
+    text-align: center;
+    border-style: ridge;
+}
+
+#menuhitung {
+    background: rgb(40, 208, 238);
+    margin: 20px auto;
+    margin-left: 40%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    height: auto;
+    width: 25%;
+    border-style: ridge;
+}
+
+#menuhitung a {
+    margin-left: 30%;
+}
+
+#ftable {
+    border-style: ridge;
+    width: auto;
+     margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    background-color: lightcyan;
+    text-align: center;
+}
+
+#ftable th {
+    background-color: lightgreen;
+    height: 60px;
+}
+
+#ftable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#ftable tr:hover {
+    background-color: #ddd;
+}
+
+#ftable td, #ftable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#ftable2 {
+    border-style: ridge;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    background-color: lightcyan;
+    text-align: left;
+}
+
+#ftable2 th {
+    background-color: lightgreen;
+    height: 60px;
+}
+
+#ftable2 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#ftable2 tr:hover {
+    background-color: #ddd;
+}
+
+#ftable2 td, #ftable2 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=time] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=reset] {
+    width: 100%;
+    background-color: #ff0000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=reset]:hover {
+    background-color: #ff0000;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.tradio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tradio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radioklik {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.tradio:hover input~.radioklik {
+    background-color: #ccc;
+}
+
+.tradio input:checked~.radioklik {
+    background-color: #2196F3;
+}
+
+.radioklik:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.tradio input:checked~.radioklik:after {
+    display: block;
+}
+
+.tradio .radioklik:after {
+    top: 4px;
+    left: 4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}
+
+.btnhapus {
+    width: 100%;
+    background-color: #ff0000;
+    color: white;
+    padding: 5px 5px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnhapus button:hover {
+    background-color: #ff0000;
+}
+
+.btnedit {
+    width: 100%;
+    background-color: #003cff;
+    color: white;
+    padding: 5px 5px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnedit button:hover {
+    background-color: #003cff;
+}
+
+.btnsimpan{
+    width: 100%;
+    background-color: #00c210;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnsimpan button:hover {
+    background-color: #003cff;
+}
